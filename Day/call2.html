@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function add(c,d){
+		return this.a+this.b+c+d;
+	}
+	var o = {a:1,b:3};
+	var z=add.call(o,5,7);
+	console.log(z);
+</script>
+</body>
+</html>

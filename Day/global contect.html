@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var myVar =100;
+	function SomeFunction(){
+		function WholsThis(){
+			var myVar=200;
+			alert("myVar="+myVar);
+			alert("this.myVar="+this.myVar);
+		} 
+		WholsThis();
+	}
+	SomeFunction();
+</script>
+</html>

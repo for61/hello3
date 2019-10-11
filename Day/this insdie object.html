@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var myVar = 100;
+		function WhoisThis(){
+			this.myVar = 200;
+		}
+		var obj1= new WhoisThis();
+		var obj2= new WhoisThis();
+		obj2.myVar=300;
+		alert(obj1.myVar);
+		alert(obj2.myVar);
+	</script>
+
+</body>
+</html>

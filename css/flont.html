@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Float</title>
+    <style>
+        .left{
+            border: 2px solid forestgreen;
+            background-color: whitesmoke;
+            padding: 10px;
+            width: 200px;
+            float: left; /* to float this to left */
+        }
+        .right{
+            border: 2px solid forestgreen;
+            background-color: whitesmoke;
+            padding: 10px;
+            width: 200px;
+            float: right; /* to float to right */
+        }
+        .clear{
+            clear: both; /* to clear the floating */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="left">
+        <h1>Float Left</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, sint!</p>
+    </div>
+
+    <div class="right">
+        <h1>Float Right</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, sint!</p>
+    </div>
+
+    <div class="clear">
+        <h1>clear me</h1>
+    </div>
+
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Vertical Navigation</title>
+    <style>
+        aside{
+            font-family: "Helvetica Neue",sans-serif;
+            background-color: lightgreen;
+            float: left; /* to float to left */
+            width: 200px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px seagreen;
+        }
+        aside ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        aside ul li a{
+            text-decoration: none;
+            color: black;
+            padding: 18px 20px;
+            display: block; /* to display in Block */
+        }
+        aside ul li a:hover{
+            background-color: darkseagreen;
+            color: white;
+            border-radius: 15px;
+            font-size: 20px;
+        }
+        aside ul li a.active{
+            background-color: forestgreen;
+            color: white;
+            border-radius: 15px;
+        }
+    </style>
+
+</head>
+<body>
+
+
+<aside>
+    <ul>
+        <li>
+            <a href="#" class="active">HTML</a>
+        </li>
+        <li>
+            <a href="#">JavaScript</a>
+        </li>
+        <li>
+            <a href="#">CSS</a>
+        </li>
+        <li>
+            <a href="#">TypeScript</a>
+        </li>
+        <li>
+            <a href="#">Bootstrap</a>
+        </li>
+        <li>
+            <a href="#">Angular JS</a>
+        </li>
+        <li>
+            <a href="#">JAVA</a>
+        </li>
+    </ul>
+</aside>
+
+</body>
+</html>
